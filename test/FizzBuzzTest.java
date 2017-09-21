@@ -37,16 +37,4 @@ public class FizzBuzzTest {
         assertEquals(expected = "FizzBuzz", new FizzBuzz().get(30));
     }
 
-    public static class FizzBuzz{
-        public  FizzBuzz(){
-
-        }
-
-        public String get(int position) {
-            return position % 15 == 0 ? "FizzBuzz" :
-                    position % 5 == 0 ? "Buzz" :
-                            position % 3 != 0 ? String.valueOf(position) : "Fizz";
-
-        }
-    }
 }
